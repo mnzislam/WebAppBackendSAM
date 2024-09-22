@@ -22,7 +22,7 @@ Resources:
       # WEBHOOK_URL
       Environment:
         Variables:
-          WEBHOOK_URL: 'https://hooks.slack.com/services/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'
+          WEBHOOK_URL: 'https://hooks.slack.com/services/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'
       Events:
         HelloWorld:
           Type: Api # More info about API Event Source: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#api
