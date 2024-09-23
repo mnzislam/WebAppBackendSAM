@@ -34,7 +34,17 @@ Resources:
     Type: AWS::Serverless::Function
     Properties:
       Handler: app.lambda_handler
+<<<<<<< HEAD
       CodeUri: app/
+=======
+      Runtime: python3.11
+      Architectures:
+        - x86_64
+      # WEBHOOK_URL
+      Environment:
+        Variables:
+          WEBHOOK_URL: 'https://hooks.slack.com/services/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'
+>>>>>>> 100a3a112398d1290456b6b8001caf221b32cf03
       Events:
         ApiEvent:
           Type: Api
