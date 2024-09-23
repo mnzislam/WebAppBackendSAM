@@ -70,9 +70,9 @@ Resources:
             Principal:
               Service: lambda.amazonaws.com
             Action: sts:AssumeRole
-      ManagedPolicyArns:
-        - arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
-        - arn:aws:iam::aws:policy/service-role/AWSLambdaRole
+#      ManagedPolicyArns:
+#        - arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
+#        - arn:aws:iam::aws:policy/service-role/AWSLambdaRole
       Policies:
         - PolicyName: S3AccessPolicy
           PolicyDocument:
@@ -83,7 +83,7 @@ Resources:
                   - s3:GetObject
                   - s3:PutObject
                   - s3:DeleteObject
-                Resource: arn:aws:s3:::izaanschool-api-codebuild-artifact-123/*
+                Resource: arn:aws:s3:::codepipeline-us-east-1-359835647853/*
 
 Outputs:
   ApiGatewayApi:
